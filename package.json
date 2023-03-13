@@ -1,0 +1,24 @@
+{
+  "name": "chowsupreme-restaurant-chatbot",
+  "version": "0.0.1",
+  "description": "A restaurant chatbot that assists customers in placing orders for their preferred meals",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobisupreme/chowsupreme.git"
+  },
+  "author": "Tobi Balogun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobisupreme/chowsupreme/issues"
+  },
+  "homepage": "https://github.com/tobisupreme/chowsupreme#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
