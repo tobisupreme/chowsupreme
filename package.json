@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "restart": "nodemon src/server.js",
     "test": "jest"
   },
   "repository": {
