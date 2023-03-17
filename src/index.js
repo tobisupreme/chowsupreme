@@ -14,10 +14,12 @@ app.get('/', (req, res) => {
 
 io.on('connection', (socket) => {
   console.log(`A user with id: ${socket.client.id} connected`);
-  // console.log(socket.client.id);
+  
+  // Send a welcome message to client
+  socket.emit('incoming', 'Welcome to ChowSupreme!');
 
   socket.on('chat message', (msg) => {
-    io.emit('incoming', msg);
+    socket.emit('incoming', msg);
     console.log('message: ' + msg);
   });
 
